@@ -1,20 +1,18 @@
-import BlogForm from '../BlogForm/BlogForm';
+import BlogForm from '../BlogForm/';
 import BlogPostList from '../BlogPostList/';
 
 function Main() {
   return (
     <>
-      <div className="container">
+      <div className="container mx-auto mt-3">
         <div className="row">
           <div className="col-xxl-12 col-xl-12 col-md-12">
-            <div className="border">
-              <BlogForm />
-            </div>
+            <BlogForm />
           </div>
         </div>
         <div className="row">
           <div className="col-xxl-12 col-xl-12 col-md-12">
-            <div className="border">
+            <div className="row border">
               <BlogPostList />
             </div>
           </div>
