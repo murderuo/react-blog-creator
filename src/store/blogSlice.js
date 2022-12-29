@@ -24,14 +24,11 @@ export const blogSlice = createSlice({
   initialState,
   reducers: {
     addPost: () => {},
-    getUsers: () => {},
-    getPosts: () => {},
-    getComments: () => {},
-    getPhotos: () => {},
+   
   },
 });
 
-export const { addPost, getUsers, getPosts, getComments, getPhotos } =
+export const { addPost,  } =
   blogSlice.actions;
 
 export default blogSlice.reducer;

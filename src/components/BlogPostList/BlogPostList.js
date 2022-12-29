@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import DataFetcher from '../DataFetcher/';
+import Muro from '../Muro/Muro';
 
 function BlogPostList() {
   const posts = useSelector(state => {
@@ -77,7 +78,6 @@ function BlogPostList() {
         </div>
         <br />
       </div>
-        <DataFetcher />
     </>
   );
 }
