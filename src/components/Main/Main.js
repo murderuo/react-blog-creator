@@ -12,8 +12,10 @@ function Main() {
         </div>
         <div className="row">
           <div className="col-xxl-12 col-xl-12 col-md-12">
-            <div className="row border">
-              <BlogPostList />
+            <div className="row ">
+              {/* <div className="d-flex justify-content-center"> */}
+                <BlogPostList />
+              {/* </div> */}
             </div>
           </div>
         </div>
