@@ -9,7 +9,7 @@ function BlogPostList() {
   return (
     <>
       {posts.map(post => (
-        <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto gx-0 mt-3">
+        <div className="col-xxl col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto gx-0 mt-3">
           {/* <div className="d-flex border "> */}
             <div className="card p-3 h-100">
               <img src={post.photo} className="card-img-top"></img>
