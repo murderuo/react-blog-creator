@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import axios from 'axios';
 const baseURL = process.env.REACT_APP_JSON_URL;
 

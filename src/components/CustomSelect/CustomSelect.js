@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import Select from 'react-select';
 
 function CustomReactSelect({ options, onChange, multiple, name }) {
@@ -13,4 +14,4 @@ function CustomReactSelect({ options, onChange, multiple, name }) {
   );
 }
 
-export default CustomReactSelect;
+export default memo(CustomReactSelect);

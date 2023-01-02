@@ -1,5 +1,5 @@
 import { useFormik } from 'formik';
-import { useEffect, useState } from 'react';
+import { useCallback, useContext, useEffect, useState } from 'react';
 import CustomReactSelect from '../CustomSelect/CustomSelect';
 import { valSchema } from '../Schema/validationSchema';
 import { fetchData } from '../DataFetcher/DataFetcher';
@@ -81,10 +81,10 @@ function BlogForm() {
   }));
   // options section ---> end
 
-  const handleSetFieldHandler = (val, action) => {
+  const handleSetFieldHandler = useCallback((val, action) => {
     setFieldValue(action.name, [val]);
     console.log(values.users);
-  };
+  },[]);
   return (
     <>
       <form onSubmit={handleSubmit} onReset={handleReset}>
@@ -223,10 +223,11 @@ function BlogForm() {
                 multiple={values.commentsIsMultiple}
               />
               <div>{errors.comments && <div>{errors.comments}</div>}</div>
-              <div className="mx-auto p-2">
+              <div className="d-flex gap-2 mx-auto p-2 ">
                 <button type="submit" className="p-2">
                   Create a fake Blog !
                 </button>
+
                 <br />
               </div>
             </div>
